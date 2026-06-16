@@ -1,0 +1,87 @@
+/* Mobile styles for small screens (<= 428px) */
+@media (max-width: 428px) {
+	.header {
+		height: 56px !important;
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	.header-search {
+		width: 60% !important;
+		max-width: 260px !important;
+	}
+
+	.header-search input {
+		font-size: 14px !important;
+	}
+
+	.sidebar {
+		width: 100% !important;
+		height: auto !important;
+		position: relative !important;
+		padding: 12px !important;
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center !important;
+		gap: 12px !important;
+		overflow-x: auto !important;
+	}
+
+	.sidebar .group p {
+		white-space: nowrap;
+		font-size: 14px !important;
+	}
+
+	.dashboard {
+		padding: 12px !important;
+		gap: 12px !important;
+	}
+
+	.profile-cover {
+		height: 160px !important;
+		background-position: center !important;
+		background-size: cover !important;
+	}
+
+	.profile-card {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		height: auto !important;
+		gap: 8px !important;
+		padding: 12px !important;
+	}
+
+	.profile-card img {
+		width: 64px !important;
+		height: 64px !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	.cards-row {
+		flex-direction: column !important;
+		gap: 12px !important;
+	}
+
+	.card {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.card img {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	/* Make wide utility widths fall back to auto on very small screens */
+	button[class*='w-'] {
+		width: auto !important;
+		min-width: 96px !important;
+	}
+
+	.flex.justify-between {
+		flex-direction: column !important;
+		align-items: stretch !important;
+		gap: 8px !important;
+	}
+}

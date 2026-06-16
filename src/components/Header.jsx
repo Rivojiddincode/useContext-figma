@@ -4,9 +4,9 @@ import { useTheme } from '../themContext/ThemeContext';
 function Header() {
   const { theme, toggleTheme } = useTheme()
   return (
-    <div  style={{background: theme === "dark" ? "#1A1D1F": "#ccc"}} className='flex w-full h-28 bg-[#1A1D1F] items-center justify-between px-6 sticky top-0 z-10'>
+    <div  style={{background: theme === "dark" ? "#1A1D1F": "#ccc"}} className='header flex w-full h-28 bg-[#1A1D1F] items-center justify-between px-6 sticky top-0 z-10'>
         {/* Qidiruv qismi */}
-        <div  style={{background: theme === "dark"? "#111315":"#ccc", border:"1px solid #FFF"}}  className='w-80 h-12 bg-[#111315] rounded-lg flex items-center justify-start px-4'>
+        <div  style={{background: theme === "dark"? "#111315":"#ccc", border:"1px solid #FFF"}}  className='header-search w-80 h-12 bg-[#111315] rounded-lg flex items-center justify-start px-4'>
             <img src={Search} alt="search-icon" className="w-5 h-5 text-gray-400" />
             <input  style={{background: theme === "dark"? "#111315":"#ccc"}}
               type="search"  

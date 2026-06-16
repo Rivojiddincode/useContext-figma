@@ -7,7 +7,7 @@ function Sidebar() {
   const logoutIconClass = "w-6 h-6 text-[#6F767E] transition-colors duration-200 group-hover:text-red-500";
 
   return (
-    <div style={{background: theme === "dark" ? "#1A1D1F": "#ccc"}}  className='w-[230px] h-screen bg-[#1A1D1F] pt-[41px] pl-[33px] pb-10 flex flex-col justify-between ' >
+    <div style={{background: theme === "dark" ? "#1A1D1F": "#ccc"}}  className='sidebar w-[230px] h-screen bg-[#1A1D1F] pt-[41px] pl-[33px] pb-10 flex flex-col justify-between ' >
         
         <div>
             <div className='w-[196px] h-19 border-b-[#272B30] border-b-2 mb-7'>

@@ -10,11 +10,11 @@ import { useTheme } from '../themContext/ThemeContext';
 function Dashboard() {
   const { theme, toggleTheme } = useTheme()
   return (
-    <div style={{background: theme === "dark"? "#111315": "#FFF"}} className='flex flex-col bg-[#111315] p-10 w-full  gap-8'>
+    <div style={{background: theme === "dark"? "#111315": "#FFF"}} className='dashboard flex flex-col bg-[#111315] p-10 w-full  gap-8'>
     <div className='flex flex-col gap-8'>
       <p style={{color: theme === "light"? "black": "#fff"}} className='text-[#FFFFFF] text-[24px] font-semibold '>My Profile</p>
       <div className='flex  flex-col'>
-<div  style={{ backgroundImage: `url(${bg})` }} className="flex w-full h-45 bg-cover bg-center rounded-tr-[10px] rounded-tl-[10px] ">
+    <div  style={{ backgroundImage: `url(${bg})` }} className="profile-cover flex w-full h-45 bg-cover bg-center rounded-tr-[10px] rounded-tl-[10px] ">
 <button className="block mx-auto w-26.25 h-10 rounded-full border border-white/10 bg-white/1 text-white text-sm font-medium backdrop-blur-sm ml-270 mt-30 cursor-pointer">
   Edit Cover
 </button>
@@ -22,7 +22,7 @@ function Dashboard() {
 
 </div>
 
-      <div style={{background: theme === "dark" ? "#1A1D1F":"#CCC"}} className='flex w-full h-30.25 bg-[#1A1D1F]  rounded-br-[10px] rounded-bl-[10px] items-center gap-4 justify-between p-3 '>
+      <div style={{background: theme === "dark" ? "#1A1D1F":"#CCC"}} className='profile-card flex w-full h-30.25 bg-[#1A1D1F]  rounded-br-[10px] rounded-bl-[10px] items-center gap-4 justify-between p-3 '>
         <div className='flex items-center gap-4'>
 <div className='flex gap-8  '>
 <img className='w-35 h-35 ml-10 -mt-10' src={op} alt="" />
@@ -45,8 +45,8 @@ function Dashboard() {
                 <button className='w-25.5 h-13 rounded-md bg-[#111315] text-[16px] text-[#FFFFFF] font-normal  hover:bg-[#499BFC] cursor-pointer'>Newest</button>
 
         </div>
-        <div className='flex gap-7.5 '>
-   <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className=' flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
+           <div className='cards-row flex gap-7.5 '>
+         <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className='card flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
     <img src={sz} alt="" />
     <p className='text-[#FFFFFF] text-[18px] font-medium'>President Apart</p>
     <div className='flex items-center gap-2'>
@@ -57,8 +57,8 @@ function Dashboard() {
     <button className='w-full border-2 border-[#1A1D1F] h-15 text-[14px] text-[#499BFC] font-light hover:bg-[#499BFC] text-[#ffff]'>View Detail</button>
 
 
-   </div>
-    <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className=' flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
+  </div>
+   <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className='card flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
     <img src={rs} alt="" />
     <p  className='text-[#FFFFFF] text-[18px] font-medium'>President Apart</p>
     <div className='flex items-center gap-2'>
@@ -69,8 +69,8 @@ function Dashboard() {
     <button className='w-full border-2 border-[#1A1D1F] h-15 text-[14px] text-[#499BFC] font-light hover:bg-[#499BFC] text-[#ffff]'>View Detail</button>
 
 
-   </div>
-    <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className=' flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
+  </div>
+   <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className='card flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
     <img src={ks} alt="" />
     <p className='text-[#FFFFFF] text-[18px] font-medium'>President Apart</p>
     <div className='flex items-center gap-2'>
@@ -81,8 +81,8 @@ function Dashboard() {
     <button className='w-full border-2 border-[#1A1D1F] h-15 text-[14px] text-[#499BFC] font-light hover:bg-[#499BFC] text-[#ffff]'>View Detail</button>
 
 
-   </div>
-    <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className=' flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
+  </div>
+   <div style={{background: theme === "dark"? "#111315" :"#ccc", border: "2px solid #fff"}} className='card flex flex-col w-62 h-96.25 bg-[#111315] rounded-md p-3 gap-4'>
     <img src={ls} alt="" />
     <p className='text-[#FFFFFF] text-[18px] font-medium'>President Apart</p>
     <div className='flex items-center gap-2'>
